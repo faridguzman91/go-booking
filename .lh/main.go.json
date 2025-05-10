@@ -1,0 +1,30 @@
+{
+    "sourceFile": "main.go",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1746220228233,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1746220259447,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,33 +1,11 @@\n-package main\r\n-\r\n-import \"fmt\"\r\n-\r\n-func main() {\r\n-\tconferenceName := \"go conf\"\r\n-\tconst conferenceTickets = 50\r\n-\tvar remainingTickets = 50\r\n-\r\n-\tfmt.Printf(\"welcome to %v booking app \\n\", conferenceName)\r\n-\tfmt.Printf(\"we have a total of %v tickets and %v still available \\n\", conferenceTickets, remainingTickets)\r\n-\tfmt.Println(\"get your ticket here\")\r\n-\r\n-\tvar firstName string\r\n-\tvar lastName string\r\n-\tvar email string\r\n-\tvar userTickets int\r\n-\r\n-\t// ask user for name (entr in console)\r\n-\tfmt.Println(\"enter first name:\")\r\n-\tfmt.Scan(&firstName)\r\n-\r\n-\tfmt.Println(\"enter last name:\")\r\n-\tfmt.Scan(&lastName)\r\n-\r\n-\tfmt.Println(\"enter email:\")\r\n-\tfmt.Scan(&email)\r\n-\r\n-  fmt.Println(\"enter number of tickets:\")\r\n-  fmt.Scan(&userTickets)\r\n-\r\n-\tfmt.Printf(\"thanks for booking %v %v you booked %v tickets. \\n you should be getting an email at %v\", firstName, lastName, userTickets, email)\r\n-}\r\n+package main import \"fmt\" func main() { conferenceName := \"go conf\" const conferenceTickets = 50 var remainingTickets = 50 fmt.Printf(\"welcome to %v booking app \\n\", conferenceName) fmt.Printf(\r\n+    \"we have a total of %v tickets and %v still available \\n\",\r\n+    conferenceTickets,\r\n+    remainingTickets\r\n+) fmt.Println(\"get your ticket here\") var firstName string var lastName string var email string var userTickets int // ask user for name (entr in console) fmt.Println(\"enter first name:\") fmt.Scan(& firstName) fmt.Println(\"enter last name:\") fmt.Scan(& lastName) fmt.Println(\"enter email:\") fmt.Scan(& email) fmt.Println(\"enter number of tickets:\") fmt.Scan(& userTickets) fmt.Printf(\r\n+    \"thanks for booking %v %v you booked %v tickets. \\n you should be getting an email at %v\",\r\n+    firstName,\r\n+    lastName,\r\n+    userTickets,\r\n+    email\r\n+) }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1746220346259,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n \t// ask user for name (entr in console)\r\n \tfmt.Println(\"enter first name:\")\r\n \tfmt.Scan(&firstName)\r\n \r\n-\tfmt.Println(\"enter last name:\")\r\n+\tfmt.Println(\"enter last name:\"\r\n \tfmt.Scan(&lastName)\r\n \r\n \tfmt.Println(\"enter email:\")\r\n \tfmt.Scan(&email)\r\n"
+                },
+                {
+                    "date": 1746220654181,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n import \"fmt\"\n \n func main() {\n \tconferenceName := \"go conf\"\n-\tconst conferenceTickets = 50\n+ \tconst conferenceTickets = 50\n \tvar remainingTickets = 50\n \n \tfmt.Printf(\"welcome to %v booking app \\n\", conferenceName)\n \tfmt.Printf(\"we have a total of %v tickets and %v still available \\n\", conferenceTickets, remainingTickets)\n"
+                }
+            ],
+            "date": 1746220228233,
+            "name": "Commit-0",
+            "content": "package main\r\n\r\nimport \"fmt\"\r\n\r\nfunc main() {\r\n\tconferenceName := \"go conf\"\r\n\tconst conferenceTickets = 50\r\n\tvar remainingTickets = 50\r\n\r\n\tfmt.Printf(\"welcome to %v booking app \\n\", conferenceName)\r\n\tfmt.Printf(\"we have a total of %v tickets and %v still available \\n\", conferenceTickets, remainingTickets)\r\n\tfmt.Println(\"get your ticket here\")\r\n\r\n\tvar firstName string\r\n\tvar lastName string\r\n\tvar email string\r\n\tvar userTickets int\r\n\r\n\t// ask user for name (entr in console)\r\n\tfmt.Println(\"enter first name:\")\r\n\tfmt.Scan(&firstName)\r\n\r\n\tfmt.Println(\"enter last name:\")\r\n\tfmt.Scan(&lastName)\r\n\r\n\tfmt.Println(\"enter email:\")\r\n\tfmt.Scan(&email)\r\n\r\n  fmt.Println(\"enter number of tickets:\")\r\n  fmt.Scan(&userTickets)\r\n\r\n\tfmt.Printf(\"thanks for booking %v %v you booked %v tickets. \\n you should be getting an email at %v\", firstName, lastName, userTickets, email)\r\n}\r\n"
+        }
+    ]
+}
