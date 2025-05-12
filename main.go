@@ -34,6 +34,11 @@ func main() {
 		fmt.Println("enter number of tickets:")
 		fmt.Scan(&userTickets)
 
+    if userTickets > remainingTickets {
+      fmt.Printf("We only have %v tickets remaining, so cant book %v tickets\n", remainingTickets, userTickets)
+      //skip all other executions, continue
+      continue
+    }
 		remainingTickets = remainingTickets - userTickets
 		bookings = append(bookings, firstName+" "+lastName)
 
@@ -44,12 +49,13 @@ func main() {
 		firstNames := []string{}
 
 		// for loop (index number and booking in bookings, look in range on data structure of bookings)
-		// end when iterating iver all bookings elements, _ to define unused variable
+		// end when iterating iver all bookings elements, _ to define unused variable (index will not be used)
 
 		for _, booking := range bookings {
 			var names = strings.Fields(booking)
 			firstNames = append(firstNames, names[0])
 		}
+
 		fmt.Printf("The first names of bookings are: %v\n", firstNames)
 
     noTicketsRemaining := remainingTickets == 0  
